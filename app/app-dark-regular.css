@@ -51,10 +51,10 @@
 }
 
 .page_theme {
-    background-color:white;
+    background-color: black;
 }
 
-.text {
-    color: black;
+.text{
+    color: white;
     size: 12;
 }

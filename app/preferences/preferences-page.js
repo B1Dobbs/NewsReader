@@ -26,6 +26,10 @@ function gotoSearch(args) {
         bindingContext: page.bindingContext});
 }
 
+function setSmallText() {
+    
+}
+
 exports.gotoSearch = gotoSearch;
 exports.gotoHome = gotoHome;
 exports.pageNavigateTo = pageNavigateTo;

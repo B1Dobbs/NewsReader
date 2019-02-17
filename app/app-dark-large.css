@@ -54,20 +54,7 @@
     background-color: black;
 }
 
-#dark_theme {
-    background-color: black;
-    text-decoration-color: white;
-}
-
-#light_theme {
-    background-color: white;
-    text-decoration-color: black;
-}
-
-#text_light {
+.text {
+    size: 20;
     color: white;
-}
-
-#text_dark {
-    color: black;
 }

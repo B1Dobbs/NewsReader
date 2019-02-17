@@ -1,4 +1,4 @@
-<Page id="{{ page_theme }}" loaded="pageLoaded" class="page_theme" xmlns:nsDrawer="nativescript-ui-sidedrawer" xmlns="http://www.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" xmlns:f="nativescript-fresco">
+<Page style="{{ page_theme }}" loaded="pageLoaded" class="page_theme" xmlns:nsDrawer="nativescript-ui-sidedrawer" xmlns="http://www.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" xmlns:f="nativescript-fresco">
 
 	<ActionBar class="action-bar">
 		<Label text="Preferences" class="action-bar-label" />
@@ -32,12 +32,12 @@
 			<Label class="h3 m-15" text="Text Size" textWrap="true" row="1" col="0"/>
 			<Slider loaded="onSliderLoaded" row="2" col="0" value="20"  minValue="15" maxValue="100"/>-->
 
-			<Label id="{{ text }}" class="h3 m-15" text="Dark Theme" textWrap="true" row="0" col="0"/>
+			<Label style="{{ text }}" class="h3 m-15" text="Dark Theme" textWrap="true" row="0" col="0"/>
 			<Switch  class="m-15 firstSwitchStyle" checked="{{ firstSwitch }}"	row="0" col="1"/>
-			<Label class="h3 m-15" text="{{ secondSwitchResult }}" textWrap="true" row="1" col="0"/>
-			<Switch  class="m-15 secondSwitchStyle" checked="{{ secondSwitch }}" row="1" col="1"/>
-			<Label class="h3 m-15" text="{{ thirdSwitchResult }}" textWrap="true" row="2" col="0"/>
-			<Switch class="m-15 thirdSwitchStyle" checked="{{ thirdSwitch }}"	row="2" col="1"/>
+			<Label style="{{ text }}" class="h3 m-15" text="Text Size" textWrap="true" row="1" col="0"/>
+			<Button style="{{ smallTextButton }}" text="Regular" tap="setSmallText" row="2" col="0" />
+			<Button style="{{ largeTextButton }}" text="Large" tap="{{ largeText }}" row="2" col="1" />
+			
 		</GridLayout>
 	</nsDrawer:RadSideDrawer.mainContent>
 	</nsDrawer:RadSideDrawer>
