@@ -50,10 +50,24 @@
     to { transform: translateY(-60); }
 }
 
+.page_theme {
+    background-color: black;
+}
+
 #dark_theme {
     background-color: black;
+    text-decoration-color: white;
 }
 
 #light_theme {
     background-color: white;
+    text-decoration-color: black;
+}
+
+#text_light {
+    color: white;
+}
+
+#text_dark {
+    color: black;
 }
