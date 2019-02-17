@@ -27,10 +27,17 @@
     </nsDrawer:RadSideDrawer.drawerContent>
 	<nsDrawer:RadSideDrawer.mainContent>
 		<GridLayout rows="auto auto auto" columns="* auto" class="m-5">
-			<Label class="h3 m-15" text="Dark Theme" textWrap="true" row="0" col="0"/>
-			<Switch  class="m-15 firstSwitchStyle" checked="{{ firstSwitch }}"    row="0" col="1"/>
+			<!--<Label class="h3 m-15" text="Dark Theme" textWrap="true" row="0" col="0"/>
+			<Switch  id="theme-switch" class="m-15 firstSwitchStyle" checked="{{ firstSwitch }}" row="0" col="1"/>
 			<Label class="h3 m-15" text="Text Size" textWrap="true" row="1" col="0"/>
-			<Slider loaded="onSliderLoaded" row="2" col="0" value="20"  minValue="15" maxValue="100"/>
+			<Slider loaded="onSliderLoaded" row="2" col="0" value="20"  minValue="15" maxValue="100"/>-->
+
+			<Label class="h3 m-15" text="{{ firstSwitchResult }}" textWrap="true" row="0" col="0"/>
+			<Switch  class="m-15 firstSwitchStyle" checked="{{ firstSwitch }}"	row="0" col="1"/>
+			<Label class="h3 m-15" text="{{ secondSwitchResult }}" textWrap="true" row="1" col="0"/>
+			<Switch  class="m-15 secondSwitchStyle" checked="{{ secondSwitch }}" row="1" col="1"/>
+			<Label class="h3 m-15" text="{{ thirdSwitchResult }}" textWrap="true" row="2" col="0"/>
+			<Switch class="m-15 thirdSwitchStyle" checked="{{ thirdSwitch }}"	row="2" col="1"/>
 		</GridLayout>
 	</nsDrawer:RadSideDrawer.mainContent>
 	</nsDrawer:RadSideDrawer>
