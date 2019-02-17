@@ -26,11 +26,11 @@
             </StackLayout>
     </nsDrawer:RadSideDrawer.drawerContent>
 	<nsDrawer:RadSideDrawer.mainContent>
-		<GridLayout rows="auto,auto" columns="auto,*" class="m-5">
-			<Label class="h3 m-15" [text]="firstSwitchState" textWrap="true" row="0" col="0"></Label>
-			<Switch class="m-15" checked="false" (checkedChange)="onFirstChecked($event)" row="0" col="1"></Switch>
-			<Label class="h3 m-15" [text]="secondSwitchState" textWrap="true" row="1" col="0"></Label>
-			<Switch class="m-15" checked="true" (checkedChange)="onSecondChecked($event)" row="1" col="1"></Switch>
+		<GridLayout rows="auto auto auto" columns="* auto" class="m-5">
+			<Label class="h3 m-15" text="Dark Theme" textWrap="true" row="0" col="0"/>
+			<Switch  class="m-15 firstSwitchStyle" checked="{{ firstSwitch }}"    row="0" col="1"/>
+			<Label class="h3 m-15" text="Text Size" textWrap="true" row="1" col="0"/>
+			<Slider loaded="onSliderLoaded" row="2" col="0" value="20"  minValue="15" maxValue="100"/>
 		</GridLayout>
 	</nsDrawer:RadSideDrawer.mainContent>
 	</nsDrawer:RadSideDrawer>
