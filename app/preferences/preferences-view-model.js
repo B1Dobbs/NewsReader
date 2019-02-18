@@ -15,21 +15,21 @@ var PreferencesViewModel = /** @class */ (function (_super) {
         this.set("firstSwitch", false);
         this.set("regText", true);
         this.set("largeText", false);
-        //this.set("page_theme", "dark_theme");
+        
         // handling Switch checked change
         this.on(observable_1.Observable.propertyChangeEvent, (propertyChangeData) => {
             if(propertyChangeData.propertyName == "firstSwitch"){
                 isDark = propertyChangeData.value;
             }
-            else if(propertyChangeData.propertyName == "largeText"){
-                isLarge = propertyChangeData.value;
-                this.set("regText", !propertyChangeData.value);
-            }
-            else if(propertyChangeData.propertyName == "regText"){
+            else if(propertyChangeData.propertyName == "regText" && !isDouble){
                 isLarge = propertyChangeData.value;
                 this.set("largeText", !propertyChangeData.value);
             }
-            console.log(propertyChangeData.propertyName);
+            else if(propertyChangeData.propertyName == "largeText" && !isDouble){
+                isLarge = propertyChangeData.value;
+                this.set("regText", !propertyChangeData.value);
+            }
+            console.log("  isLarge: " + isLarge + ", isDark: " + isDark );
 
             if(isDark && !isLarge){
                 console.log("Setting dark-regular theme.");
@@ -55,7 +55,6 @@ var PreferencesViewModel = /** @class */ (function (_super) {
                 this.set("page_theme", "background-color: white");
                 this.set("text", "color: black; font-size: 20;");
             }
-            
         });
 
         return _this;

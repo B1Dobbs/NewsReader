@@ -1,7 +1,7 @@
 <Page style="{{ page_theme }}" loaded="pageLoaded" class="page_theme" xmlns:nsDrawer="nativescript-ui-sidedrawer" xmlns="http://www.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" xmlns:f="nativescript-fresco">
 
 	<ActionBar class="action-bar">
-		<Label text="Preferences" class="action-bar-label" />
+		<Label text="Article" class="action-bar-label" />
 	</ActionBar>
 
 	<nsDrawer:RadSideDrawer id="sideDrawer">
@@ -26,19 +26,10 @@
             </StackLayout>
     </nsDrawer:RadSideDrawer.drawerContent>
 	<nsDrawer:RadSideDrawer.mainContent>
-		<GridLayout rows="auto auto auto auto" columns="* auto auto" class="m-5">
-			<!--<Label class="h3 m-15" text="Dark Theme" textWrap="true" row="0" col="0"/>
-			<Switch  id="theme-switch" class="m-15 firstSwitchStyle" checked="{{ firstSwitch }}" row="0" col="1"/>
-			<Label class="h3 m-15" text="Text Size" textWrap="true" row="1" col="0"/>
-			<Slider loaded="onSliderLoaded" row="2" col="0" value="20"  minValue="15" maxValue="100"/>-->
-
-			<Label style="{{ text }}" class="h3 m-15" text="Dark Theme" textWrap="true" row="0" col="0"/>
-			<Switch  class="m-15 firstSwitchStyle" checked="{{ firstSwitch }}"	row="0" col="2"/>
-			<Label style="{{ text }}" class="h3 m-15" text="Text Size" textWrap="true" row="1" col="0"/>
-			<Label style="{{ text }}" class="h3 m-15" text="      Regular" textWrap="true" row="2" col="0"/>
-			<Switch  class="m-15 firstSwitchStyle" checked="{{ regText }}"	row="2" col="2"/>
-			<Label style="{{ text }}" class="h3 m-15" text="      Large" textWrap="true" row="3" col="0"/>
-			<Switch  class="m-15 firstSwitchStyle" checked="{{ largeText }}" row="3" col="2"/>
+		<GridLayout rows="auto auto auto" columns="* auto" class="m-5">
+			<Label style="{{ text }}" class="text" text="{{ title }}" textWrap="true" row="0" col="0"/>
+			<Label style="{{ text }}" class="text" text="{{ author }}" textWrap="true" row="1" col="0"/>
+			<Label style="{{ text }}" class="text" text="{{ content }}" textWrap="true" row="2" col="0"/>
 		</GridLayout>
 	</nsDrawer:RadSideDrawer.mainContent>
 	</nsDrawer:RadSideDrawer>

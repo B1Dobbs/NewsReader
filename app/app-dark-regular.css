@@ -1,7 +1,7 @@
 @import 'nativescript-theme-core/css/core.light.css';
 
 .action-bar {
-    background-color: White;
+    background-color:  rgb(68, 68, 68);
 }
 
 .action-bar-label {
@@ -9,22 +9,35 @@
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20;
-    color: Black;
+    color:white;
 }
 .news-title {
-    color: #333f4a;
+    color: white;
     font-family: 'Opinion Pro ExtraCondensed', 'Mint_Type_-_Opinion_Pro_ExtraCondensed_Light';
     font-size: 24;
 }
 
 .news-source {
-    color: White;
+    color:white;
     font-family: 'Opinion Pro ExtraCondensed', 'Mint_Type_-_Opinion_Pro_ExtraCondensed_Light';
     text-transform: uppercase;
     font-size: 20;
     padding: 8 0 3 10;
 }
 
+.news-source-banner {
+    background-color:  #2e2e2e;
+}
+
+.news-title-padding {
+    background-color:  black;
+}
+
+.search-bar {
+    background-color: #2e2e2e;
+    font-family: 'Opinion Pro ExtraCondensed', 'Mint_Type_-_Opinion_Pro_ExtraCondensed_Light';
+    font-size: 24;
+}
 .search-bar {
     background-color: #f0f0f0;
     font-family: 'Opinion Pro ExtraCondensed', 'Mint_Type_-_Opinion_Pro_ExtraCondensed_Light';
