@@ -28,6 +28,11 @@ function setSmallText() {
    // preferences_view_model_1.setIsLarge(false);
 }
 
+function gotoInfo(args) {
+    frame.topmost().navigate( 'info/info-page' );
+}
+
+exports.gotoInfo = gotoInfo;
 exports.setSmallText = setSmallText;
 exports.gotoSearch = gotoSearch;
 exports.gotoHome = gotoHome;

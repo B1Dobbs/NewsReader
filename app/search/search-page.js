@@ -21,6 +21,11 @@ function gotoPrefs(args) {
     frame.topmost().navigate( 'preferences/preferences-page' );
 }
 
+function gotoInfo(args) {
+    frame.topmost().navigate( 'info/info-page' );
+}
+
+exports.gotoInfo = gotoInfo;
 exports.gotoPrefs = gotoPrefs;
 exports.gotoHome = gotoHome;
 exports.pageNavigateTo = pageNavigateTo;

@@ -37,6 +37,11 @@ function onItemSelected(args) {
         context: { title: title, author: author, image: image}});
 }
 
+function gotoInfo(args) {
+    frame.topmost().navigate( 'info/info-page' );
+}
+
+exports.gotoInfo = gotoInfo;
 exports.onItemSelected = onItemSelected;
 exports.gotoPrefs = gotoPrefs;
 exports.gotoSearch = gotoSearch;

@@ -21,6 +21,9 @@
 						<Button text="Preferences" tap="gotoPrefs"
 						padding="10"
 						backgroundColor="lightgray"/> 
+						<Button text="Info" tap="gotoInfo"
+						padding="10"
+						backgroundColor="lightgray"/> 
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
