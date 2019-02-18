@@ -7,24 +7,11 @@ purpose of the file is to pass control to the app’s first module.
 Object.defineProperty(exports, "__esModule", { value: true });
 var app = require("tns-core-modules/application");
 var fresco = require("nativescript-fresco");
-var theme = "light_theme";
 if (app.android) {
     app.on("launch", function () {
         fresco.initialize();
     });
 }
-
-function applyDarkTheme(){
-    this.theme = "dark_theme";
-}
-
-function getTheme(){
-    return theme;
-}
-
-exports.getTheme = getTheme;
-exports.applyDarkTheme = applyDarkTheme;
-
 app.start({ moduleName: 'home/home-page' });
 /*
 Do not place any code after the application has been started as it will not

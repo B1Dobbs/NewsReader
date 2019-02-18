@@ -1,7 +1,7 @@
 <Page loaded="pageLoaded" class="page" xmlns:nsDrawer="nativescript-ui-sidedrawer" xmlns="http://www.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" xmlns:f="nativescript-fresco">
 
 	<ActionBar class="action-bar">
-		<Label text="Latest Stories" class="action-bar-label" />
+		<Label text="Latest Stories" class="action-bar-label" id="txtSelection" />
 	</ActionBar>
 
 	<nsDrawer:RadSideDrawer id="sideDrawer">
@@ -28,11 +28,7 @@
 	<nsDrawer:RadSideDrawer.mainContent>
 	<GridLayout class="{{ searching ? 'searching' : 'not-searching' }}" marginBottom="-120">
 		<GridLayout rows="auto, *">
-
-			<SearchBar row="0" hint="Filter News..." id="searchBar" text="{{ searchPhrase }}" submit="{{ onSearchSubmit }}" clear="{{ clear }}"
-				class="search-bar" />
-
-			<lv:RadListView row="1" id="news" items="{{ news }}" marginRight="-2" separatorColor="transparent" height="100%">
+			<lv:RadListView selectionBehavior="Press" multipleSelection="false" itemSelected="onItemSelected" row="1" id="news" items="{{ news }}" marginRight="-2" separatorColor="transparent" height="100%">
 				<lv:RadListView.itemTemplate>
 					<StackLayout>
 						<GridLayout rows="*" backgroundColor="White">

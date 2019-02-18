@@ -1,0 +1,70 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:nsDrawer="nativescript-ui-sidedrawer">
+
+    <ActionBar class="action-bar">
+
+        <Label class="action-bar-title" text="Home"></Label>
+    </ActionBar>
+
+    <nsDrawer:RadSideDrawer id="sideDrawer">
+    <nsDrawer:RadSideDrawer.drawerContent>
+        <StackLayout backgroundColor="gray">
+        <StackLayout height="56" style="text-align: center; vertical-align: center;">
+            <Label text="Navigation Menu"/>
+        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+            <Label text="Primary" padding="10" backgroundColor="lightgray"/>
+            <Label text="Social" padding="10"/>
+            <Label text="Promotions" padding="10" />
+            <Label text="Labels" padding="10" backgroundColor="lightgray" />
+            <Label text="Important" padding="10" />
+            <Label text="Starred" padding="10" />
+            <Label text="Sent Mail" padding="10" />
+            <Label text="Drafts" padding="10" />
+            <Label text="Close Drawer" color="lightgray" padding="10" style="horizontal-align: center" tap="{{ onCloseDrawerTap }}"/>
+
+            </StackLayout>
+        </ScrollView>
+        </StackLayout>
+    </nsDrawer:RadSideDrawer.drawerContent>
+
+    <nsDrawer:RadSideDrawer.mainContent>
+        <GridLayout class="page">
+		<ScrollView scroll="onScroll">
+			<StackLayout>
+				<StackLayout id="topView" height="250" style="background-image: url('~/images/castle.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+					<!-- this is the header for collapsing -->
+					<!-- Note: this can be any type of layout you want -->
+					<Label text="The Rose Family" color="white" class="title-label"></Label>
+				</StackLayout>
+				<StackLayout width="100%" backgroundColor="white" padding="10">
+					<!--Add your page content here-->
+					<Label textWrap="true" text="by Robert Frost" class="h2 description-label"></Label>
+					<Label textWrap="true" class="p-10" text="The rose is a rose,"></Label>
+					<Label textWrap="true" class="p-10" text="And was always a rose."></Label>
+					<Label textWrap="true" class="p-10" text="But the theory now goes"></Label>
+                    <Label textWrap="true" class="p-10" text="That the apple’s a rose,"></Label>
+					<Label textWrap="true" class="p-10" text="And the pear is, and so’s"></Label>
+					<Label textWrap="true" class="p-10" text="The plum, I suppose."></Label>
+                    <Label textWrap="true" class="p-10" text="The dear only knows"></Label>
+					<Label textWrap="true" class="p-10" text="What will next prove a rose."></Label>
+					<Label textWrap="true" class="p-10" text="You, of course, are a rose –"></Label>
+                    <Label textWrap="true" class="p-10" text="But were always a rose."></Label>
+                    <Button text="Open drawer" tap="{{ onOpenDrawerTap }}" margin="10" style="horizontal-align: left" />
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	    </GridLayout>
+    </nsDrawer:RadSideDrawer.mainContent>
+    </nsDrawer:RadSideDrawer>
+
+
+
+    <!-- <GridLayout>
+        <! Add your page content here
+        <Image src="~/images/castle.png" stretch="aspectFill" />
+    </GridLayout> -->
+</Page>

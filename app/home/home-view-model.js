@@ -18,9 +18,10 @@ var HomeViewModel = /** @class */ (function (_super) {
         fetch(req).then(function(response) {
              response.json().then( (val) => {
                  _this.allNews = val.articles;
+                 this.set("news", _this.allNews);
 
                  //Output reponse to prove that it's working
-                 console.log(val.articles[0]); 
+                 console.log(val.articles[0].content); 
             })
         })
         
