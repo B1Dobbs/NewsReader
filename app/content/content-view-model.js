@@ -1,9 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var observable_property_decorator_1 = require("../observable-property-decorator");
 var observable_1 = require("tns-core-modules/data/observable");
-var platform_1 = require("tns-core-modules/platform");
-var application = require("tns-core-modules/application");
 
 var ContentViewModel = /** @class */ (function (_super) {
     

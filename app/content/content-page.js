@@ -4,11 +4,7 @@ var content_view_model_1 = require("./content-view-model");
 // Event handler for Page "pageLoaded" event attached in home-page.xml
 function pageLoaded(args) {
     var page = args.object;
-    page.bindingContext = new content_view_model_1.ContentViewModel(page.navigationContext);
-}
-
-function gotoHome(args) {
-    frame.topmost().navigate( 'home/home-page' );
+    page.bindingContext = new content_view_model_1.ContentViewModel();
 }
 
 function gotoSearch(args) {

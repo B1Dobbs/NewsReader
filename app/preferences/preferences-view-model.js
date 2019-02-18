@@ -21,13 +21,8 @@ var PreferencesViewModel = /** @class */ (function (_super) {
             if(propertyChangeData.propertyName == "firstSwitch"){
                 isDark = propertyChangeData.value;
             }
-            else if(propertyChangeData.propertyName == "regText" && !isDouble){
+            else if(propertyChangeData.propertyName == "largeText"){
                 isLarge = propertyChangeData.value;
-                this.set("largeText", !propertyChangeData.value);
-            }
-            else if(propertyChangeData.propertyName == "largeText" && !isDouble){
-                isLarge = propertyChangeData.value;
-                this.set("regText", !propertyChangeData.value);
             }
             console.log("  isLarge: " + isLarge + ", isDark: " + isDark );
 

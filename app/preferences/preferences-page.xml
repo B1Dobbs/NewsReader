@@ -40,8 +40,6 @@
 			<Label style="{{ text }}" class="h3 m-15" text="Text Size" textWrap="true" row="1" col="0"/>
 			<Label style="{{ text }}" class="h3 m-15" text="      Large" textWrap="true" row="2" col="0"/>
 			<Switch  class="m-15 firstSwitchStyle" checked="{{ largeText }}"	row="2" col="2"/>
-			<Label style="{{ text }}" class="h3 m-15" text="      Regular" textWrap="true" row="3" col="0"/>
-			<Switch  class="m-15 firstSwitchStyle" checked="{{ regText }}" row="3" col="2"/>
 		</GridLayout>
 	</nsDrawer:RadSideDrawer.mainContent>
 	</nsDrawer:RadSideDrawer>
